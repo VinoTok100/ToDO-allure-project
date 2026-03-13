@@ -40,7 +40,7 @@ def test_delete_todo(authenticated_page, api_created_todo):
     todo_page = TodoPage(authenticated_page)
 
   #  todo_page.page.pause()
-    todo_page.goto()
+   # todo_page.goto()
 
     todo_page.assert_todo_visible(api_created_todo["item"])
 
