@@ -1,0 +1,69 @@
+# ========================
+# Python cache
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ========================
+# Virtual environments
+# ========================
+venv/
+.env/
+.venv/
+ENV/
+
+# ========================
+# Environment variables
+# ========================
+.env
+
+# ========================
+# Pytest
+# ========================
+.pytest_cache/
+
+# ========================
+# Playwright artifacts
+# ========================
+test-results/
+playwright-report/
+
+# ========================
+# Custom automation artifacts
+# ========================
+artifacts/
+videos/
+traces/
+screenshots/
+
+# ========================
+# Allure reports
+# ========================
+allure-results/
+allure-report/
+
+# ========================
+# IDE files
+# ========================
+.idea/
+.vscode/
+
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# Coverage reports
+# ========================
+.coverage
+htmlcov/
+coverage.xml
