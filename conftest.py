@@ -47,7 +47,9 @@ def test_user(playwright: Playwright):
 def storage_state_file(playwright: Playwright, test_user: dict) -> str:
     os.makedirs(AUTH_DIR, exist_ok=True)
 
-    browser = playwright.chromium.launch(headless=False)
+    #browser = playwright.chromium.launch(headless=False)
+    #browser = playwright.chromium.launch(headless=os.getenv("GITHUB_ACTIONS") == "true")
+    browser = playwright.chromium.launch(headless=True)
     context = browser.new_context(base_url=BASE_URL)
     page = context.new_page()
 
