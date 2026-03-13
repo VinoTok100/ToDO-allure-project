@@ -34,7 +34,7 @@ jobs:
           API_BASE_URL: https://todo.qacart.com
           HEADLESS: true
           BROWSER: chromium
-        run: pytest
+        run: pytest -n 2
 
       - name: Upload allure results
         if: always()

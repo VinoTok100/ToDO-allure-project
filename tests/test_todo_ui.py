@@ -15,8 +15,8 @@ def test_api_created_todo_is_visible_in_ui(authenticated_page, api_created_todo)
 
     with allure.step("Open todo page"):
         todo_page.goto()
-        # print("URL after goto:", authenticated_page.url)
-        # print("Local storage:", authenticated_page.evaluate("() => ({ ...localStorage })"))
+        print("URL after goto:", authenticated_page.url)
+        print("Local storage:", authenticated_page.evaluate("() => ({ ...localStorage })"))
 
     with allure.step("Verify API-created todo is visible"):
         todo_page.assert_todo_visible(api_created_todo["item"])
@@ -39,8 +39,8 @@ def test_api_created_todo_row_exists(authenticated_page, api_created_todo):
 def test_delete_todo(authenticated_page, api_created_todo):
     todo_page = TodoPage(authenticated_page)
 
-  #  todo_page.page.pause()
-   # todo_page.goto()
+    todo_page.page.pause()
+    todo_page.goto()
 
     todo_page.assert_todo_visible(api_created_todo["item"])
 
