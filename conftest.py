@@ -100,7 +100,7 @@ def authenticated_context(browser, storage_state_file, request):
     context.close()
 
 @pytest.fixture
-#def authenticated_page(authenticated_context):
+def authenticated_page(authenticated_context):
     page = authenticated_context.new_page()
     yield page
     page.close()
