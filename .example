@@ -1,0 +1,4 @@
+BASE_URL=https://todo.qacart.com
+USER_PASSWORD=Test1234
+HEADLESS=true
+BROWSER=chromium
